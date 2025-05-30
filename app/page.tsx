@@ -1,10 +1,24 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Check, Zap, Shield, Rocket, Star, Globe, Users, TrendingUp } from "lucide-react"
 import Link from "next/link"
+import { useToast } from "@/components/ui/use-toast"
+import { useEffect } from "react"
 
 export default function NovaWebLanding() {
+  const { toast } = useToast()
+
+  useEffect(() => {
+    toast({
+      title: "Welcome!",
+      description: "This is a basic show case template created by Varun",
+      duration: 5000,
+    })
+  }, [])
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
