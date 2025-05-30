@@ -1,24 +1,10 @@
-'use client'
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Check, Zap, Shield, Rocket, Star, Globe, Users, TrendingUp } from "lucide-react"
 import Link from "next/link"
-import { useToast } from "@/components/ui/use-toast"
-import { useEffect } from "react"
 
 export default function NovaWebLanding() {
-  const { toast } = useToast()
-
-  useEffect(() => {
-    toast({
-      title: "Welcome!",
-      description: "This is a basic show case template created by Varun",
-      duration: 5000,
-    })
-  }, [])
-
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
@@ -72,8 +58,7 @@ export default function NovaWebLanding() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                NovaWeb empowers developers to create lightning-fast, scalable web applications with our next-generation
-                platform. Experience the future of development today.
+                This is a sample website with limited functionality made by Varun
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
